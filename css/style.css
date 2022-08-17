@@ -1,0 +1,140 @@
+/* - Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+- font-family: 'Montserrat', sans-serif;
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 
+- font-family: 'Fraunces', serif; */
+
+body {
+    background: #f3eae3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.d-mobile {
+    display: none;
+}
+
+.section-card-product {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+}
+
+.page-center {
+    margin: auto;
+}
+
+.card-placeholder {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    width: 40rem;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.cp-img {
+    width: 20rem;
+    border-radius: 10px 0 0 10px;
+}
+
+.cp-info {
+    width: 20rem;
+}
+
+.cp-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #87888c;
+    letter-spacing: 6px;
+    margin-top: 2rem;
+}
+
+.cp-perfume-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 36px;
+    width: 15rem;
+    margin: 0;
+}
+
+.cp-perfume-detail {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #87888c;
+    line-height: 24px;
+    width: 15rem;
+}
+
+.cp-pricing {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    height: 4rem;
+    align-items: center;
+}
+
+.cp-curr-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #3d8168;
+}
+
+.cp-former-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #87888c;
+    text-decoration: line-through;
+}
+
+.cp-cart {
+    background: #3d8168;
+    width: 15rem;
+    padding: 1rem;
+    margin: 1rem 0 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cp-cart:hover {
+    background: #1a4031;
+}
+
+.cp-cart span {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 769px) {
+    .d-desktop {
+        display: none;
+    }
+
+    .d-mobile {
+        display: block;
+    }
+
+    .card-placeholder {
+        flex-direction: column;
+        gap: unset;
+        width: unset;
+    }
+
+    .cp-img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .cp-info {
+        width: 15rem;
+        margin: auto;
+    }
+}
